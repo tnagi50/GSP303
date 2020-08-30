@@ -1,0 +1,9 @@
+{
+  "gatewayAddress": "10.0.0.1",
+  "id": "4419239840426933743",
+  "ipCidrRange": "10.0.0.0/24",
+  "name": "securesubnetwork",
+  "networkUrl": "projects/qwiklabs-gcp-00-6a85a6ecaf37/global/networks/securenetwork",
+  "regionUrl": "projects/qwiklabs-gcp-00-6a85a6ecaf37/regions/us-central1",
+  "selfLink": "projects/qwiklabs-gcp-00-6a85a6ecaf37/regions/us-central1/subnetworks/securesubnetwork"
+}

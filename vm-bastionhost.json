@@ -1,0 +1,122 @@
+{
+  "canIpForward": false,
+  "confidentialInstanceConfig": {
+    "enableConfidentialCompute": false
+  },
+  "cpuPlatform": "Intel Haswell",
+  "creationTimestamp": "2020-08-29T18:46:18.899-07:00",
+  "deletionProtection": false,
+  "description": "",
+  "disks": [
+    {
+      "autoDelete": true,
+      "boot": true,
+      "deviceName": "vm-bastionhost",
+      "diskSizeGb": "50",
+      "guestOsFeatures": [
+        {
+          "type": "UEFI_COMPATIBLE"
+        },
+        {
+          "type": "MULTI_IP_SUBNET"
+        },
+        {
+          "type": "WINDOWS"
+        },
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        }
+      ],
+      "index": 0,
+      "interface": "SCSI",
+      "kind": "compute#attachedDisk",
+      "licenses": [
+        "projects/windows-cloud/global/licenses/windows-server-2016-dc"
+      ],
+      "mode": "READ_WRITE",
+      "source": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a/disks/vm-bastionhost",
+      "type": "PERSISTENT"
+    }
+  ],
+  "displayDevice": {
+    "enableDisplay": false
+  },
+  "id": "7433689111302945285",
+  "kind": "compute#instance",
+  "labelFingerprint": "42WmSpB8rSM=",
+  "machineType": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a/machineTypes/e2-medium",
+  "metadata": {
+    "fingerprint": "SuSizSxbDjA=",
+    "items": [
+      {
+        "key": "windows-keys",
+        "value": "{\"email\": \"student-00-8ab7d7f41fab@qwiklabs.net\", \"expireOn\": \"2020-08-30T01:52:51Z\", \"exponent\": \"AQAB\", \"modulus\": \"pIUfxCcIJ8WsbhwsphUSjMtEZcBn74LA1ihmMICLG9/0hJvUSbwVFDOsf6i4kcXDauzcKjhocj7jpNy4ZrAaNcAySf21Wny260z50G3ZmyvCqb5CvRD4tdYNRXmCSkzimJuRuYMfLMnnMeCozO9QMg0sfpd7H/KREw9YxkX2Ku+5BgIQ+EbM2woaBLxsLq8JiFDFGQVbu+uxWzp4dLqUuvpTWI76HvOWCwpelzXxb3h2qrFYA18JYTqqtC1X6VbIv/kV40no/i/ZZlXBgN5z6nT0bsY38vnE0X7z0WrcLu5ESYCWWcqbFlifzWNdAwj2t4RpIR6deBaNWX6sOK8bbQ==\", \"userName\": \"student_00_8ab7d7f41fab\"}\n{\"email\": \"student-00-8ab7d7f41fab@qwiklabs.net\", \"expireOn\": \"2020-08-30T01:53:47Z\", \"exponent\": \"AQAB\", \"modulus\": \"vClY44w2kT6H1MHXBouOUJB2HL/JseWyBGuiVDcxPARIdsgBmjfgHObD2nRqZvcPihsp0Z3a0cnSspGdQuvnGZtY8MTUaGfP42faK0jxElCMvKzmcwg8VflcJBNXMwzqRZYV/+LutyROq12Dsr9RfMF2qt3C+JmFTB8oWUwhOFxODpNWoHwyyeXPRRU+OrXIc93kF9vsgiSiGczhCfELkxP/FbkpqV7j7PuDX/HS0yne2zBWQ64I/Q+9DZaruwPZGKoZn+x75Cahp+P4nE7k6h9pWk0v824x0xGwkso68LUth40OO8ygCQB8OR94b/9gKVTrds2Bkr3H6gEeDrNXIQ==\", \"userName\": \"student_00_8ab7d7f41fab\"}\n{\"email\": \"student-00-8ab7d7f41fab@qwiklabs.net\", \"expireOn\": \"2020-08-30T01:55:31Z\", \"exponent\": \"AQAB\", \"modulus\": \"nFovnY3vaucBSiKQNG279lDsdoBDFz+Edji6a8VK5qArLmse54t4jHzR/Fkx7qApYCCghpdFO6B9dm8JZfxZMj0XM54vw0SwJ6R7BvWmsO4I19ICM6mFg8tYmNR5i0JCvZV98jkSAUnVXPE020Ue8rIM13FigtlGo85DOOxWGoGenksEfE96oxPRdoIuNXvRIQW2TYToRRGH2/9Qe+t2vhi5X4PgLm43LZDg7AAEeqtgDI9K8f74jIY4hlTxV/xRP2bzZbdnGtq4w2UHapg/QgmCOwyegUJP0WorA/NkmSe7QzP5MSaGrrr6HYgy3GUd7EeYbmZYnYfp0dnV38iJ7w==\", \"userName\": \"app_admin\"}"
+      }
+    ],
+    "kind": "compute#metadata"
+  },
+  "name": "vm-bastionhost",
+  "networkInterfaces": [
+    {
+      "accessConfigs": [
+        {
+          "kind": "compute#accessConfig",
+          "name": "External NAT",
+          "natIP": "35.224.67.94",
+          "networkTier": "PREMIUM",
+          "type": "ONE_TO_ONE_NAT"
+        }
+      ],
+      "fingerprint": "wEblrGhxsR4=",
+      "kind": "compute#networkInterface",
+      "name": "nic0",
+      "network": "projects/qwiklabs-gcp-00-6a85a6ecaf37/global/networks/securenetwork",
+      "networkIP": "10.0.0.3",
+      "subnetwork": "projects/qwiklabs-gcp-00-6a85a6ecaf37/regions/us-central1/subnetworks/securesubnetwork"
+    },
+    {
+      "fingerprint": "_1zUJk2cofQ=",
+      "kind": "compute#networkInterface",
+      "name": "nic1",
+      "network": "projects/qwiklabs-gcp-00-6a85a6ecaf37/global/networks/default",
+      "networkIP": "10.128.0.4",
+      "subnetwork": "projects/qwiklabs-gcp-00-6a85a6ecaf37/regions/us-central1/subnetworks/default"
+    }
+  ],
+  "reservationAffinity": {
+    "consumeReservationType": "ANY_RESERVATION"
+  },
+  "scheduling": {
+    "automaticRestart": true,
+    "onHostMaintenance": "MIGRATE",
+    "preemptible": false
+  },
+  "selfLink": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a/instances/vm-bastionhost",
+  "serviceAccounts": [
+    {
+      "email": "20517777585-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ],
+  "shieldedInstanceConfig": {
+    "enableIntegrityMonitoring": true,
+    "enableSecureBoot": false,
+    "enableVtpm": true
+  },
+  "startRestricted": false,
+  "status": "RUNNING",
+  "tags": {
+    "fingerprint": "NfTTNVh6sLU=",
+    "items": [
+      "bastion"
+    ]
+  },
+  "zone": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a"
+}

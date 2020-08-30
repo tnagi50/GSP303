@@ -1,0 +1,110 @@
+{
+  "canIpForward": false,
+  "confidentialInstanceConfig": {
+    "enableConfidentialCompute": false
+  },
+  "cpuPlatform": "Intel Haswell",
+  "creationTimestamp": "2020-08-29T18:44:12.094-07:00",
+  "deletionProtection": false,
+  "description": "",
+  "disks": [
+    {
+      "autoDelete": true,
+      "boot": true,
+      "deviceName": "vm-securehost",
+      "diskSizeGb": "50",
+      "guestOsFeatures": [
+        {
+          "type": "UEFI_COMPATIBLE"
+        },
+        {
+          "type": "MULTI_IP_SUBNET"
+        },
+        {
+          "type": "WINDOWS"
+        },
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        }
+      ],
+      "index": 0,
+      "interface": "SCSI",
+      "kind": "compute#attachedDisk",
+      "licenses": [
+        "projects/windows-cloud/global/licenses/windows-server-2016-dc"
+      ],
+      "mode": "READ_WRITE",
+      "source": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a/disks/vm-securehost",
+      "type": "PERSISTENT"
+    }
+  ],
+  "displayDevice": {
+    "enableDisplay": false
+  },
+  "id": "7144092673558100612",
+  "kind": "compute#instance",
+  "labelFingerprint": "42WmSpB8rSM=",
+  "machineType": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a/machineTypes/e2-medium",
+  "metadata": {
+    "fingerprint": "ViXh_lM-x2I=",
+    "items": [
+      {
+        "key": "windows-keys",
+        "value": "{\"email\": \"student-00-8ab7d7f41fab@qwiklabs.net\", \"expireOn\": \"2020-08-30T01:58:54Z\", \"exponent\": \"AQAB\", \"modulus\": \"nBY9aOfVkOn4P0Oy+Twp1obnQ69dandVxNHnXhTYK1dN6SW07rncEbDuMNhtThvE0fcKYT77vpII7CM9oP/e7J0PkbvBaANoYWyeuDLyXWyMblelDP81F+b5aYhQcRgqiadkOtf1WJRAv3doRrh2mCPRY407UIa1KBZeuL7XIvCLIRRp14hS9kfG2NfJhqT0s2J1+Fpv4auj+vlsYjlutWEWGpNpB3FibpWbp5YDeLGYRhJqMA3lI4sbmG06mFPIE9ni1HpYVXGW+mGJ2/1DpEuYaisy/GQj7Fvuq8nxhbwz0I3Ah5whoOJ1ZHOmEwLvNdv2PbC9b9fPLtlC6bXZ/Q==\", \"userName\": \"student_00_8ab7d7f41fab\"}\n{\"email\": \"student-00-8ab7d7f41fab@qwiklabs.net\", \"expireOn\": \"2020-08-30T01:59:55Z\", \"exponent\": \"AQAB\", \"modulus\": \"wJLEMI7VEvbkU9w9pN9mqJ+ZA8vQDx3ayobc9+x8cO1mPb1iTDxD4MXgEy6aSLKAQmYsEoHMfMHA/DUlshJKxwAMk05mg2iAfQHRAzAtAev8m/Qu1M1BdmbwYuJIKFzfVYNqsWiOx7wtPzu1nXIEesRoj2apJnIiVcxKF6itdmfxEHjfmkz5b8AdKsd6+98eOfmDCS6BIqvXdWlYbFiu299DDHgOKIRRygcsXy86wlPdsAYqGxZMqnPCFnPdvr7zFGpsQUfyO5hX7rSG5RdD+0nGszs/opQcMIHzbS2SCx7nYieHEzHHp+X8alas5ce1sh1+BCz0RBHMiG1AmzxbWQ==\", \"userName\": \"app_admin\"}"
+      }
+    ],
+    "kind": "compute#metadata"
+  },
+  "name": "vm-securehost",
+  "networkInterfaces": [
+    {
+      "fingerprint": "M_yVFY0Obns=",
+      "kind": "compute#networkInterface",
+      "name": "nic0",
+      "network": "projects/qwiklabs-gcp-00-6a85a6ecaf37/global/networks/default",
+      "networkIP": "10.128.0.3",
+      "subnetwork": "projects/qwiklabs-gcp-00-6a85a6ecaf37/regions/us-central1/subnetworks/default"
+    },
+    {
+      "fingerprint": "n9aYtazHNVI=",
+      "kind": "compute#networkInterface",
+      "name": "nic1",
+      "network": "projects/qwiklabs-gcp-00-6a85a6ecaf37/global/networks/securenetwork",
+      "networkIP": "10.0.0.2",
+      "subnetwork": "projects/qwiklabs-gcp-00-6a85a6ecaf37/regions/us-central1/subnetworks/securesubnetwork"
+    }
+  ],
+  "reservationAffinity": {
+    "consumeReservationType": "ANY_RESERVATION"
+  },
+  "scheduling": {
+    "automaticRestart": true,
+    "onHostMaintenance": "MIGRATE",
+    "preemptible": false
+  },
+  "selfLink": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a/instances/vm-securehost",
+  "serviceAccounts": [
+    {
+      "email": "20517777585-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ],
+  "shieldedInstanceConfig": {
+    "enableIntegrityMonitoring": true,
+    "enableSecureBoot": false,
+    "enableVtpm": true
+  },
+  "startRestricted": false,
+  "status": "RUNNING",
+  "tags": {
+    "fingerprint": "42WmSpB8rSM="
+  },
+  "zone": "projects/qwiklabs-gcp-00-6a85a6ecaf37/zones/us-central1-a"
+}

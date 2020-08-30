@@ -1,0 +1,30 @@
+{
+  "allowed": [
+    {
+      "IPProtocol": "tcp",
+      "ports": [
+        "3389"
+      ]
+    }
+  ],
+  "creationTimestamp": "2020-08-29T18:40:44.382-07:00",
+  "description": "",
+  "direction": "INGRESS",
+  "disabled": false,
+  "enableLogging": false,
+  "id": "8569098277602377075",
+  "kind": "compute#firewall",
+  "logConfig": {
+    "enable": false
+  },
+  "name": "rdp-bastion",
+  "network": "projects/qwiklabs-gcp-00-6a85a6ecaf37/global/networks/securenetwork",
+  "priority": 1000.0,
+  "selfLink": "projects/qwiklabs-gcp-00-6a85a6ecaf37/global/firewalls/rdp-bastion",
+  "sourceRanges": [
+    "0.0.0.0/0"
+  ],
+  "targetTags": [
+    "bastion"
+  ]
+}
